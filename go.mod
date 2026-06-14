@@ -5,7 +5,7 @@ go 1.26.1
 require (
 	github.com/hashicorp/vault v1.21.2
 	github.com/hashicorp/vault/api v1.23.0
-	github.com/labstack/echo/v4 v4.15.2
+	github.com/labstack/echo/v4 v4.15.3
 	github.com/stretchr/testify v1.11.1
 	golang.org/x/crypto v0.52.0
 )
