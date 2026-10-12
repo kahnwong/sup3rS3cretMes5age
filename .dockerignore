@@ -1,10 +1,32 @@
-.circleci
-CLI.md
-.codacy.yml
-CODEOWNERS
-deploy
+# VCS
 .git
 .gitignore
-LICENSE
+
+# CI / code review config
+.circleci
+.github
+.codacy.yml
+.golangci.yml
+CODEOWNERS
+
+# Build tooling (image build uses deploy/ explicitly; Go stages need nothing here)
 Makefile
-README.md
+Makefile.buildx
+deploy
+eslint.config.mjs
+
+# Docs
+*.md
+
+# AI agents (CLAUDE.md/AGENTS.md/GEMINI.md match *.md; dotdirs need explicit entries)
+.claude
+.cursor
+.cursorignore
+.windsurf
+.aider*
+.codeium
+.continue
+.codex
+
+# Project files
+LICENSE
